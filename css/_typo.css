@@ -1,0 +1,214 @@
+body {
+  line-height: 1.6;
+	color: rgb(33, 33, 30);
+	/*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+}
+
+a, .header a:visited, .no-visited a:visited,
+a u, .header a:visited u, .no-visited a:visited u,
+.disqus a:visited, .disqus a:visited u,
+.social a:visited, .social a:visited u {
+  text-decoration: none;
+  border-bottom: .1em solid;
+  color: rgb(3, 112, 154);
+  border-color: rgba(3, 112, 154, .2);
+}
+
+a.dashed, a.dashed u {
+  border-bottom-style: dashed;
+}
+
+a.no-u {
+	border-bottom: none !important;
+}
+
+a:visited,
+a:visited u,
+.visited .menu a:visited,
+.visited .menu a:visited u {
+	color: rgb(85, 85, 85);
+	border-color: rgba(85, 85, 85, .2);
+}
+
+a.black, a.black u, a.black:visited, a.black:visited u {
+  color: rgb(33, 33, 30);
+  border-color: rgba(33, 33, 30, .2);
+}
+
+a.green, a.green u, a.green:visited, a.green:visited u {
+  color: rgb(102,162,57);
+  border-color: rgba(102,162,57, .2);
+}
+
+a.red, a.red u, a.red:visited, a.red:visited u {
+    color: rgb(220,0,0);
+    border-color: rgba(220,0,0, .2);
+}
+
+#root a:hover,
+#root a:hover u,
+.switch:hover {
+  color: rgb(170, 0, 0);
+  border-color: rgb(170, 0, 0);
+}
+
+a, a u, .menu .li i {
+  transition-property: color, border-color, background-color;
+  transition-timing-function: ease-out;
+  transition-duration: .5s;
+}
+
+a:hover, a:hover u, .menu .li i:hover {
+  transition-duration: .1s;
+}
+
+#root .selected > a,
+#root .selected > a u {
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+}
+
+a.anchor {
+  visibility: hidden;
+  position: absolute;
+}
+
+a.anchor:after {
+  content: '#';
+  padding: 0 .3em;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 1em;
+    margin-bottom: .1em;
+    margin-left: -1.2em;
+    padding-left: 1.2em;
+}
+
+h1 {
+  margin-top: .5em;
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+small {
+  font-weight: normal;
+  color: rgb(133, 133, 130);
+}
+
+h1 + h2,
+h1 + * > h2,
+h2 + h3,
+p,
+form,
+ul,
+ol {
+  margin-top: 0;
+}
+
+@media (min-width:840px) {
+  h1, h2, h3, h4 {
+    position: relative;
+    /*-webkit-backface-visibility: hidden;*/
+  }
+
+  a.anchor,
+  a.anchor:visited {
+    border-bottom: none;
+    color: #000;
+    left: 0;
+    top: -.75em;
+    padding-top: .8em;
+    outline: none;
+  }
+
+  h2:hover a.anchor,
+  h3:hover a.anchor,
+  h4:hover a.anchor,
+  h2 a.anchor:target,
+  h3 a.anchor:target,
+  h4 a.anchor:target {
+    visibility: visible;
+  }
+
+  h1 a.anchor {
+    visibility: hidden;
+  }
+}
+
+#root h2 + h2 {
+	margin-top: .5em;
+}
+
+h2.front-menu {
+  margin-top: 2em;
+}
+
+.content ul {
+	list-style: none;
+}
+
+.content ul li {
+	margin-bottom: .3em;
+}
+
+/*.content ul li:before {
+	content: '—';
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+	margin-right: .33em;
+	color: #aaa;
+}*/
+
+.indent, p + ul, p + ol, p + pre, .after-pre, .after-indent, form + .fotorama-wrap, p + .fotorama-wrap, p + .image {
+	margin-top: -.5em !important;
+	margin-bottom: 1.5em !important;
+	padding-left: 0 !important;
+}
+
+p + ul, p + ol {
+  margin-left: 40px;
+}
+
+.indent + .after-indent, pre + .after-pre {
+  margin-top: -1em !important;
+}
+
+blockquote {
+  margin-left: -2px;
+  padding-left: 40px;
+  margin-bottom: 1.5em;
+  border-left: 2px solid #ddddda;
+}
+
+h2 + ul,
+h3 + ul,
+h2 + ol,
+h3 + ol {
+  margin-top: .5em;
+}
+
+body .fotorama-wrap, body .image {
+	margin-left: 0;
+}
+
+pre + .after-pre {
+	margin-top: -1em;
+}
+
+/*a {
+	position: relative;
+}
+
+a:active {
+	top: 1px;
+}*/
+
+abbr {
+	font-size: 90%;
+	letter-spacing: .0625em;
+	margin-right: -.0625em;
+}

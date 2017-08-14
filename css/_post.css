@@ -1,0 +1,8 @@
+.post {
+  padding-top: 1.25em;
+  padding-bottom: 1px;
+}
+
+.post > h2 {
+  margin-top: 0;
+}

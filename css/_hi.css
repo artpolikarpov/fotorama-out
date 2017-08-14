@@ -1,0 +1,22 @@
+#say-hi {
+  position: absolute;
+  transform: translateZ(0);
+  left: 0;
+  right: 0;
+  padding: 0 16px 0;
+  pointer-events: none;
+  display: none;
+}
+
+#say-hi a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, .8);
+  padding: 8px 14px 10px;
+  font-size: 115%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  pointer-events: auto;
+}

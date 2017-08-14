@@ -1,0 +1,18 @@
+.contact {
+	margin-bottom: 1em;
+  margin-left: -.2em;
+}
+
+.contact, .contact .text {
+	overflow: hidden;
+	position: relative;
+	*zoom: 1;
+	max-width: 700px;
+}
+
+.contact .avatar {
+	float: left;
+	margin: 0 1em 1em 0;
+	border-radius: 50px;
+	background-color: #eee;
+}
